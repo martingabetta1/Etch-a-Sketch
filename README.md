@@ -1,5 +1,5 @@
 # Etch-a-Sketch
- My submission for the Etch-a-Sketch project for TOP.
+ My submission of the Etch-a-Sketch project for TOP.
 ## Scope of the project
 
 - This project wont use hover for drawing, instead, we'll use active (clicked) elements.
