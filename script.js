@@ -1,3 +1,6 @@
+////////////////////////////
+// Might be updated later //
+////////////////////////////
 const DEFAULT_MODE = "color"
 
 let mousedown = false;
