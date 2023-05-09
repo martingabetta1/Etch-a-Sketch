@@ -4,23 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+    rel="stylesheet"
     />
-
+    
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="app.js"></script>
-    <title>Etch a Sketch!</title>
+    <title>Etch-a-Sketch</title>
   </head>
-  <body>
+  <body onload="createBoard()">
+    
     <header>
       <img src="images/logo.png" alt="Paint Pallete" id="logo" />
-      <h1>Draw Something!</h1>
+      <h1>Etch-a-Sketch</h1>
     </header>
     <div id="container">
       <div id="sidebar">
@@ -41,20 +42,21 @@
           id="select-color"
         />
 
-        <button class="option">
+        <button class="option" id="eraser">
           <img src="images/sidebar/eraser.png" alt="" srcset="" />
         </button>
 
-        <button class="option">
+        <button class="option" id="rainbow">
           <img src="images/sidebar/rainbow.png" alt="" srcset="" />
         </button>
 
-        <button class="option">
+        <button class="option" id="gradient">
           <img src="images/sidebar/gradient.png" alt="" srcset="" />
         </button>
+
       </div>
 
-      <div id="board"></div>
+      <div id="board" class="unselectable"></div>
     </div>
   </body>
 </html>
