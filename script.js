@@ -66,19 +66,19 @@ function draw(e){
     e.target.style.backgroundColor = `rgb(${randomR},${randomG},${randomB})`;
   } else if (currentMode==="gradient"){
 
-    if (this.style.backgroundColor.match(/rgba/)) {
-      let currentOpacity = Number(this.style.backgroundColor.slice(-4, -1));
+    if (e.target.style.backgroundColor.match(/rgba/)) {
+      let currentOpacity = Number(e.target.style.backgroundColor.slice(-4, -1));
       if (currentOpacity <= 0.9) {
-          this.style.backgroundColor = `rgba(0, 0, 0, ${currentOpacity + 0.1})`;
+          e.target.style.backgroundColor = `rgba(0, 0, 0, ${currentOpacity + 0.1})`;
       }
-  } else if (this.style.backgroundColor == 'rgb(0, 0, 0)') {
+  } else if (e.target.style.backgroundColor == 'rgb(0, 0, 0)') {
       return;
   } else {
-      this.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';  
+      e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';  
   }
 
   } else if(currentMode==="eraser"){
-    e.target.style.backgroundColor = "rgba(0, 0, 0, 0)";
+    e.target.style.backgroundColor = "rgb(236, 236, 236)";
   }
   
 }
